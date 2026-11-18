@@ -1,0 +1,173 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f7f8;
+  color: #222;
+  line-height: 1.5;
+}
+
+header {
+  background: #1b6b7a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+
+  /* FLEXBOX */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin: 5px 0 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+
+  /* FLEXBOX */
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #e8a317;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+
+  /* FLEXBOX */
+  align-self: flex-start;
+}
+
+.roupa {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+
+  /* FLEXBOX */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.roupa h3 {
+  margin: 0 0 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #555;
+  font-size: 14px;
+
+  /* FLEXBOX */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MEDIA QUERIES */
+
+/* Para tablets */
+@media (max-width: 768px) {
+  main {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  header {
+    padding: 15px;
+  }
+
+  nav {
+    gap: 10px;
+  }
+}
+
+/* Para celulares */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  header p {
+    font-size: 14px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    margin: 0;
+  }
+
+  main {
+    max-width: 100%;
+    margin: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  input, select, textarea {
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
+
